@@ -1,0 +1,17 @@
+
+.News-ListItem {
+  padding: 0 24px;
+}
+
+.News-ListItem h3 {
+  margin-bottom: 4px;
+  color: black;
+}
+
+.News-ListItem a {
+  text-decoration: none;
+}
+
+.News-ListItem-secondary {
+  color: rgba(0,0,0, .54);
+}
