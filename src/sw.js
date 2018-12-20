@@ -13,7 +13,7 @@ workbox.routing.registerRoute("/", workbox.strategies.networkFirst());
 
 // api
 workbox.routing.registerRoute(
-  /http:\/\/node-hnapi\.herokuapp\.com\/news/,
+  /https:\/\/node-hnapi\.herokuapp\.com\/news/,
   workbox.strategies.networkFirst()
 );
 

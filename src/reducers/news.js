@@ -36,7 +36,7 @@ export const loadItems = () => {
 
     dispatch({ type: START_LOADING });
 
-    return axios.get('http://node-hnapi.herokuapp.com/news')
+    return axios.get('https://node-hnapi.herokuapp.com/news')
       .then(response => {
         dispatch({ type: ITEMS_LOADED, items: response.data })
       });
