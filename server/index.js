@@ -4,6 +4,7 @@ require('@babel/register')({
     '@babel/preset-env',
     '@babel/preset-react',
   ],
+  "plugins": ["@babel/plugin-transform-runtime"]
 });
 
 require('./server');

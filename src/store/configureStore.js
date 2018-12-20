@@ -8,7 +8,7 @@ import rootReducer from '../reducers';
 export default function (initialState) {
   const middlewares = [
     thunk,
-    logger,
+    ...typeof window !== 'undefined' ? [logger] : [],
   ];
 
   const store = createStore(

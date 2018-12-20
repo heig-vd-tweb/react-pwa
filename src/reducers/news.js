@@ -27,12 +27,18 @@ export default function news(state = initialState, action) {
 }
 
 export const loadItems = () => {
-  return dispatch => {
+  return async (dispatch, getState) => {
+    const state = getState();
+    console.log(state);
+    if (state.news.items.length > 0) {
+      return;
+    }
 
     dispatch({ type: START_LOADING });
+
     return axios.get('http://node-hnapi.herokuapp.com/news')
       .then(response => {
         dispatch({ type: ITEMS_LOADED, items: response.data })
-      })
+      });
   }
 }

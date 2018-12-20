@@ -7,9 +7,9 @@ import App from './components/App';
 import configureStore from './store/configureStore';
 import * as serviceWorker from './serviceWorker';
 
-const initialState = {};
-
+const initialState = window.REDUX_STATE || {};
 const store = configureStore(initialState);
+console.log('initialState', store.getState());
 
 const render = process.env.NODE_ENV === 'production'
   ? ReactDOM.hydrate

@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src="/images/logo.svg" className="App-logo" alt="logo" />
+          <img src="/logo.svg" className="App-logo" alt="logo" />
           <h1>React Hacker News</h1>
         </header>
         <main className="App-content">
