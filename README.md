@@ -2,6 +2,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![screenshot](./docs/screenshot.png)
 
+## Implemented PWA Features
+
+- Offline support
+- Server side rendering
+- Add to home home screen
+
 ## Available Scripts
 
 In the project directory, you can run:
